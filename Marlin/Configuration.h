@@ -500,9 +500,9 @@
     // #define DEFAULT_Kd_LIST { 114.00, 114.00 }
 
     // откалиброванные мной m303
-    #define DEFAULT_Kp_LIST {20.71, 15.54}
-    #define DEFAULT_Ki_LIST {1.56, 0.85}
-    #define DEFAULT_Kd_LIST {68.84, 71.01}
+    #define DEFAULT_Kp_LIST {21.24, 16.35}
+    #define DEFAULT_Ki_LIST {1.56, 0.91}
+    #define DEFAULT_Kd_LIST {72.52, 73.86}
   #else
     #define DEFAULT_Kp  22.20
     #define DEFAULT_Ki   1.08
@@ -550,9 +550,9 @@
   //#define DEFAULT_bedKd 305.4
 
   // my custom autotuned
-  #define DEFAULT_bedKp 24.25
-  #define DEFAULT_bedKi 2.61
-  #define DEFAULT_bedKd 150.19
+  #define DEFAULT_bedKp 20.54
+  #define DEFAULT_bedKi 2.20
+  #define DEFAULT_bedKd 127.63
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -997,7 +997,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 8, 6, -0.5 }
+#define NOZZLE_TO_PROBE_OFFSET { 8, 6, -0.4 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1514,13 +1514,13 @@
 
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 190
-#define PREHEAT_1_TEMP_BED    70 //70
+#define PREHEAT_1_TEMP_HOTEND 200
+#define PREHEAT_1_TEMP_BED    55 //70
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
 #define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    110 //110
+#define PREHEAT_2_TEMP_BED    90 //110
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
